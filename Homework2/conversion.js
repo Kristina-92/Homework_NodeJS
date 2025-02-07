@@ -1,21 +1,21 @@
 function convertMilesToKm(miles) {
-  const milesToKm = Math.round(miles * 1.609);
-  return `${miles} miles equals ${milesToKm} km`;
+  const milesToKm = miles * 1.609;
+  return milesToKm;
 }
 
 function convertCelsuisToFahrenheit(celsiusDegrees) {
-  const celsiusToFarhenheit = Math.round(celsiusDegrees * 1.8 + 32);
-  return `${celsiusDegrees}°C equals ${celsiusToFarhenheit}°F`;
+  const celsiusToFarhenheit = celsiusDegrees * 1.8 + 32;
+  return celsiusToFarhenheit;
 }
 
 function convertPoundsToKilogram(pounds) {
-  const ponudsToKg = Math.round(pounds / 2.2046);
-  return `${pounds} pounds equals ${ponudsToKg} kilograms`;
+  const ponudsToKg = pounds / 2.2046;
+  return ponudsToKg;
 }
 
 function convertFeetToMetres(feet) {
-  const feetToMetres = Math.round(feet * 0.3048);
-  return `${feet} feet equals ${feetToMetres} meters`;
+  const feetToMetres = feet * 0.3048;
+  return feetToMetres;
 }
 
 module.exports = {
