@@ -4,7 +4,7 @@ const {
   poundsToKilograms,
   feetToMetres,
   secondsToMinutes,
-} = require("../conversionFunctions");
+} = require("./conversionFunctions");
 
 function handleMilesToKm(req, res) {
   const { miles } = req.body;
