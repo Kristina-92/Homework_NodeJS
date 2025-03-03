@@ -1,0 +1,86 @@
+[
+  {
+    "title": "The Divine Comedy",
+    "author": "Dante Alighieri",
+    "releaseYear": 932,
+    "pages": 932
+  },
+  {
+    "title": "The Stranger",
+    "author": "Albert Camus",
+    "releaseYear": 1942,
+    "pages": 185
+  },
+  {
+    "title": "The Decameron",
+    "author": "Giovanni Boccaccio",
+    "releaseYear": 1351,
+    "pages": 1024
+  },
+  {
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "releaseYear": 1861,
+    "pages": 194
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "releaseYear": 1813,
+    "pages": 226
+  },
+  {
+    "title": "The Old Man and the Sea",
+    "author": "Ernest Hemingway",
+    "releaseYear": 1952,
+    "pages": 128
+  },
+  {
+    "title": "The Magic Mountain",
+    "author": "Thomas Mann",
+    "releaseYear": 1924,
+    "pages": 720
+  },
+  {
+    "title": "Stories",
+    "author": "Franz Kafka",
+    "releaseYear": 1924,
+    "pages": 488
+  },
+  {
+    "title": "The Trial",
+    "author": "Franz Kafka",
+    "releaseYear": 1925,
+    "pages": 160
+  },
+  {
+    "title": "The Castle",
+    "author": "Franz Kafka",
+    "releaseYear": 1926,
+    "pages": 352
+  },
+  {
+    "title": "Tales",
+    "author": "Edgar Allan Poe",
+    "releaseYear": 1950,
+    "pages": 842
+  },
+  {
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "releaseYear": 1866,
+    "pages": 551
+  },
+  {
+    "title": "The Idiot",
+    "author": "Fyodor Dostoevsky",
+    "releaseYear": 1869,
+    "pages": 656
+  },
+  {
+    "title": "Harry Potter and the Goblet of Fire",
+    "author": "J. K. Rowling",
+    "releaseYear": 2000,
+    "pages": 636
+  }
+]
