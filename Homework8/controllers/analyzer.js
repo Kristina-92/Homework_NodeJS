@@ -1,37 +1,3 @@
-// const parseTemplate = async (template, text = null) => {
-//   return new Promise((resolve, reject) => {
-//     fs.readFile(
-//       `${__dirname}/../views/${template}.html`,
-//       "utf-8",
-//       (err, content) => {
-//         if (err) return reject(err);
-//         if (text) {
-//           //{{mesto kade mozeme da napravime regex}}
-//           const totalChars = text.length;
-//           const words = text.split(/\s+/).filter(Boolean);
-//           const totalWords = words.length;
-//           const shortWords = words.filter((word) => word.length < 5).length;
-//           const longWords = words.filter((word) => word.length > 5).length;
-//           const equalWords = words.filter((word) => word.length === 5).length;
-
-//           const sentences = text.split(/[.!?]/).filter(Boolean);
-//           const totalSentences = sentences.length;
-
-//           const startsWithVowels = words.filter((word) =>
-//             /^[aeiou]/i.test(word)
-//           ).length;
-//           for (d in data) {
-//             console.log("Kluc", d);
-//             console.log("Vrednost", data[d]);
-//             content = content.replace(`{{${d}}}`, data[d]);
-//           }
-//         }
-//         return resolve(content);
-//       }
-//     );
-//   });
-// };
-
 const fs = require("fs");
 
 const getText = async (req, res) => {
