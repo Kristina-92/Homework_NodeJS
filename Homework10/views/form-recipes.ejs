@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        margin-top: 35px;
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      header a {
+        color: green;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 0 10px;
+        padding: 5px;
+      }
+      h1 {
+        font-size: 2rem;
+        color: #333;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: bold;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 15px;
+        background-color: #f9f9f97a;
+        width: 750px;
+        border-radius: 8px;
+      }
+      label {
+        margin: 5px 0;
+        text-align: left;
+        font-weight: bold;
+        width: 320px;
+      }
+      input {
+        margin-bottom: 10px;
+        padding: 8px;
+        font-size: 14px;
+        width: 320px;
+      }
+      #ingredients,
+      #method {
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px;
+        margin: auto;
+        font-size: 14px;
+        cursor: pointer;
+        background-color: #8cdf8f;
+        color: white;
+        border: none;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include ("partials/navigation")%>
+    <h1>Add a Recipe</h1>
+    <form action="/form" method="POST">
+      <label for="id">ID</label>
+      <input type="number" id="id" name="id" required /><br />
+
+      <label for="recipe">Recipe</label>
+      <input type="text" id="recipe" name="recipe" required /><br />
+
+      <label for="ingredients">Ingredients</label>
+      <textarea
+        id="ingredients"
+        name="ingredients"
+        rows="15"
+        placeholder="Each ingredient should be entered in new line. Ingredient format should be 'ingredient : quantity'"
+        required
+      ></textarea
+      ><br />
+
+      <label for="method">Method</label>
+      <textarea
+        id="method"
+        name="method"
+        rows="25"
+        placeholder="Describe the cooking steps starting with a number of step following with the description. Each step should be in new line. Max 9 steps. ex: 1.explain step one...."
+        required
+      ></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recepies List</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      margin-top: 35px;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    header a {
+      color: green;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 0 10px;
+      padding: 5px;
+    }
+    .id {
+      width: 35px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .recipe,
+    .remove {
+      width: 180px;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .ingredients {
+      width: 320px;
+      padding: 10px;
+    }
+    .listItem,
+    .step {
+      padding: 4px;
+    }
+  </style>
+  <body>
+    <%- include ("partials/navigation") %>
+    <table border="1" width="100%">
+      <tr>
+        <th class="id">ID</th>
+        <th class="recipe">Recipe</th>
+        <th class="ingredients">Ingredients</th>
+        <th>Method</th>
+        <th>Remove</th>
+      </tr>
+      <% recipes.forEach((recipe, index)=>{%>
+      <tr>
+        <td class="id"><%= recipe.id %></td>
+        <td class="recipe"><%= recipe.recipe %></td>
+        <td class="ingredients">
+          <ul>
+            <% for(let ingredient in recipe.ingredients){ %>
+            <li class="listItem">
+              <%= ingredient %> : <%= recipe.ingredients[ingredient] %>
+            </li>
+            <% } %>
+          </ul>
+        </td>
+        <td>
+          <ol>
+            <% for(let step in recipe.method) { %>
+            <li class="step">
+              <b><%= step %></b> : <%= recipe.method[step] %>
+            </li>
+            <% } %>
+          </ol>
+        </td>
+        <td class="remove"><a href="/remove?i=<%= index %>">Remove</a></td>
+      </tr>
+      <% }) %>
+    </table>
+  </body>
+</html>
